@@ -1,0 +1,308 @@
+body{
+    
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+#topBar{
+    background-color:#ffffff;
+    position: fixed;
+    width: 150%;
+    height: 50px;
+    top:0;
+    left: 0;
+    z-index: 3;  
+    font-family: 'Georgia', Times, Times New Roman, serif;  
+}
+#name{
+    color:#ffffff;
+    background-color: #4aaaa5;
+    z-index: 4;
+    position: fixed;
+    width: 200px;
+    height:50px;
+    top:0;
+    left:110px;
+    float:left;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+#links{
+
+    width: 200px;
+    height:50px;
+    color: #777777;
+    background-color: #ffffff;
+    z-index:4;
+    position: fixed;
+    left:875px;
+    top:0;
+}
+a:link{
+    color: #777777;
+    text-decoration: none;
+}
+a:visited{
+    color: #777777;
+    text-decoration: none;
+}
+.top{
+    text-align: center;
+    line-height: 50px;
+}
+#background{
+    background-image:url("images/blue.png");
+    position: fixed;
+    top:50px;
+    z-index: 1;
+    width: 120%;
+    height: 120%;
+    left:0;
+    float:left; 
+    overflow:auto; 
+    bottom:50px; 
+}
+.content{
+    position: relative;
+    left:110px;
+    width:960px;
+    background-color: #ffffff;
+    z-index: 2;
+    top: 100px;
+    overflow: auto;
+    height: 120%;
+    bottom:100px;
+   
+}
+
+h1#AboutMe{
+    font-weight: bold;
+    color:#4aaaa5;
+    border-bottom: 2px solid#cccccc;
+    font-size:30px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    margin: 20px;
+    
+}
+
+#pic{
+    background-image:url("images/me.jpg");
+    height:200px;
+    width:200px;
+    position: relative;
+    float:left; 
+    margin:10px;
+}
+p#myInformation{
+    line-height:200%;
+    color: #777777;
+}
+#footer{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:50px;
+    background-color:#666666;
+    z-index:2;
+}
+#line{
+height:10px;
+position: relative;
+top:0;
+left:0;
+background-color:#4aaaa5;
+}
+#copyRight{
+    font-size: 10px;
+    position: fixed;
+    bottom:0;
+    left:50%;
+    color:#ffffff;
+}
+
+#portPics{
+    height:200px;
+    width:200px;
+    position: relative;
+    float:left; 
+    margin:10px;
+}
+.auth-image{
+    width:200px;
+    height:auto;
+    margin-top:10px;
+    float:left;
+}
+.work{
+    width: 250px;
+    position:relative;
+    float: left;
+    margin: 8px;
+   
+}
+.work:nth-child(even){
+    margin-right: 20px;
+}
+
+h3{
+    border-bottom: 2px solid #eee;
+    padding-bottom:20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+    font-weight: bold;
+    color:#4aaaa5;
+    border-bottom:3px solid #ddd;
+
+}
+.work img{
+    width: 100%;
+    border: 0 none;
+    opacity: .8;
+}
+.work h3 {
+    border-bottom:0;
+    background: #4aaaa5;
+    color: #fff;
+    text-align:center;
+    position:absolute;
+    bottom: 20px;
+    padding:5%;
+    width: 90%;
+    line-height: 10px;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+#Contact-form{
+    font-size:18px;
+    color: #666666;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+#contact-form ul{
+    margin-bottom:20px;
+}
+#contact-form li{
+    margin-bottom: 10px;
+    
+}
+label,input[type=text],
+input[type=email],
+textarea{
+    display:block;
+    width:400px;
+    
+}
+input[type=text],
+input[type=email],
+textarea{
+    height:15px;
+    border: 1 px solid #ddd;
+    font-size:14px;
+    padding:10px;
+    border: 1px solid #cccccc;
+    margin-bottom: 25px;
+    margin-top:7px;
+    color: #777777;
+
+}
+textarea{
+    height:200px;
+}
+input[type=submit]{
+    background-color:#4aaaa5;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin:5px;
+}
+
+@media only screen and (max-width: 980px) {
+    
+    .content{
+        left:60px;
+        width:630px;
+    }
+
+    #links{
+        left:600px;
+    }
+    #name{
+        left:60px;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .content{
+        left:60px;
+        width:630px;
+    }
+
+    #links{
+        left:600px;
+    }
+    #name{
+        left:60px;
+        
+    }
+    .work{
+        position:relative;
+        float: left;
+        margin: 5px;
+    }
+}
+@media only screen and (max-width: 640px) {
+    .content{
+        left:30px;
+        width:470px;
+    }
+
+    #links{
+        left:300px;
+    }
+    #name{
+        left:30px;
+        
+    }
+    #pic{
+        background-image:url("images/me.jpg");
+        height:400px;
+        width:400px;
+        position: relative;
+        float:none; 
+        margin:10px;
+        background-size:cover;
+    }
+    #name{
+        width: 100%;
+        height:50px;
+        top:0;
+        left:0;
+        float:none;
+    }
+    #topBar{
+        width: 150%;
+        height: 100px;
+        top:0;
+        left: 0; 
+    }
+    #links{
+
+        width: 100%;
+        height:50px;
+        top:50px;
+        left:0;
+        float:none;
+    }
+    .work{
+        width: 400px;
+        position:relative;
+        float: left;
+        margin: 30px;
+    }
+    
+}
